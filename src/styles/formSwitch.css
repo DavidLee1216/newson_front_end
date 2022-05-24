@@ -1,0 +1,46 @@
+.formSwitch {
+  display: inline-block;
+  cursor: pointer;
+}
+.formSwitch i {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #8e8e8e;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+.formSwitch input:checked + i {
+  background-color: #007fff;
+}
+.formSwitch input:checked + i::before {
+  transform: translate3d(18px, 2px, 0);
+}
+.formSwitch input:checked + i::after {
+  background-color: white;
+  transform: translate3d(22px, 0px, 0);
+}
+.formSwitch i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  border-radius: 11px;
+  transition: all 0.25s linear;
+}
+.formSwitch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 24%);
+  transition: all 0.2s ease-in-out;
+}

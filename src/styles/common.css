@@ -1,0 +1,137 @@
+.page_card {
+  background-color: white;
+  border-radius: 8px !important;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  color: black;
+}
+
+.text {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+.text-15 {
+  font-size: 15px;
+}
+.text-13 {
+  font-size: 13px;
+}
+
+.primary-btn {
+  background-color: #007fff;
+}
+
+.link {
+  color: #007fff;
+}
+
+.primary_btn_icon {
+  max-width: 100%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  line-height: 20px;
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-box {
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgb(27 33 58 / 40%);
+  padding: 24px 35px 50px;
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  height: 100%;
+  max-height: 85vh;
+  border-radius: 15px;
+  color: black;
+  font-size: 1.7rem;
+  cursor: default;
+}
+.modal-title-block {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+.modal-close {
+  cursor: pointer;
+}
+
+.hover-tip {
+  position: relative;
+}
+.hover-tip-body {
+  display: none;
+  opacity: 0;
+  z-index: -1;
+  top: 100%;
+  width: 100%;
+  position: absolute;
+  transition: opacity 0.3s linear;
+}
+.hover-tip-triangle {
+  z-index: 1;
+  margin-bottom: 2px;
+  border-width: 0 10px 8px;
+  border-color: transparent;
+  background: white;
+  transform: rotate(45deg);
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -2px;
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.15);
+}
+.hover-tip:hover .hover-tip-body {
+  opacity: 1;
+  z-index: 2;
+  display: block;
+}
+.hover-info {
+  max-height: 100px;
+  max-width: 350px;
+  margin-bottom: 5px;
+  margin-left: -250px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgb(3 3 3 / 15%);
+}
+.hover-info-text {
+  font-size: 12px;
+  padding: 12px;
+  color: #676767;
+}
+.right {
+  margin-left: auto;
+  float: right;
+}
